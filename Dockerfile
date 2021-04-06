@@ -12,5 +12,5 @@ ADD https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names yo
 ADD https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3-tiny.cfg yolo_tiny_configs/yolov3-tiny.cfg
 ADD https://pjreddie.com/media/files/yolov3-tiny.weights yolo_tiny_configs/yolov3-tiny.weights
 
-EXPOSE 5000
+EXPOSE 8080
 CMD ["python3", "/src/iweblens_server.py"]
