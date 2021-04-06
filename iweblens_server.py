@@ -1,6 +1,5 @@
 import base64
 from io import BytesIO
-from PIL import Image
 import json
 import object_detection as od
 import numpy as np
