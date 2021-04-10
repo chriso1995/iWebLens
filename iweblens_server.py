@@ -9,6 +9,10 @@ from flask import Flask,jsonify, request, Response
 
 app = Flask(__name__)
 
+@app.route('/')
+def hello_world():
+	return "Hello World!"
+
 @app.route('/api/object_detection', methods=['POST'])
 def image_validation():
 	error = None
@@ -54,4 +58,4 @@ def image_validation():
 if __name__ == '__main__':
 	#ypaths = sys.argv[1]
 	app.debug = 1
-	app.run(host='0.0.0.0', threaded = True)
+	app.run(host='0.0.0.0', port=8080, threaded = True)
