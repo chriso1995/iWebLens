@@ -19,7 +19,7 @@ kubeadmConfigPatchesJSON6902:
 nodes:
 - role: control-plane
   extraPortMappings:
-    - containerPort: 8080
+    - containerPort: 30003
       hostPort: 8080
       protocol: TCP
 - role: worker
