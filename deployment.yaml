@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: iweblens
-        image: iweblens:0.10
+        image: iweblens:0.4.0
         ports:
           - containerPort: 8080
         imagePullPolicy: Never
