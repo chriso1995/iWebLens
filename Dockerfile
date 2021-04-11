@@ -13,4 +13,4 @@ ADD https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3-tiny.cf
 ADD https://pjreddie.com/media/files/yolov3-tiny.weights yolo_tiny_configs/yolov3-tiny.weights
 
 EXPOSE 8080
-CMD ["python3", "/src/iweblens_server.py"]
+CMD ["python3", "iweblens_server.py"]

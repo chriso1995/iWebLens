@@ -117,10 +117,10 @@ def do_prediction(image,net,LABELS):
                 "label": LABELS[classIDs[i]],
                 "accuracy": confidences[i],
                 "rectangle": {
-                    "height": boxes[i][0],
-                    "left": boxes[i][1],
-                    "top": boxes[i][2],
-                    "width": boxes[i][3]
+                    "height": boxes[i][3],
+                    "left": boxes[i][0],
+                    "top": boxes[i][1],
+                    "width": boxes[i][2]
                 }
             }
             results.append(objects_arr)

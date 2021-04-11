@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: iweblens-depl
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: iweblenspod
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: iweblens
-        image: iweblens:0.4.0
+        image: iweblens:1.0.0
         ports:
           - containerPort: 8080
         imagePullPolicy: Never
