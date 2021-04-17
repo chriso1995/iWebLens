@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: iweblens-depl
+  name: iweblens-deployment
 spec:
   replicas: 1
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: iweblens
-        image: iweblens:1.0.0
+        image: iweblens:1.0.2
         ports:
           - containerPort: 8080
         imagePullPolicy: Never
